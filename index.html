@@ -1,84 +1,339 @@
-Cashova
-Privacy Policy
-Last Updated: December 28, 2025
-Introduction
-Welcome to Cashova ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you understand how your personal information is collected, used, and safeguarded.
-This Privacy Policy describes our practices regarding the information we collect when you use our mobile application ("App"). By using the App, you agree to the collection and use of information in accordance with this policy.
-Information We Collect
-Account Information
-	•	Email address (for authentication and account recovery)
-	•	Password (encrypted and stored securely by Firebase Authentication)
-Financial Data
-	•	Expense transactions (amounts, merchant names, dates, categories)
-	•	Budget categories and spending limits
-	•	Monthly income information
-	•	Loan details (lender names, amounts, payment schedules, interest rates)
-	•	Payment installment information
-Usage Data
-	•	App preferences and settings
-	•	Feature usage patterns
-	•	Device information for app functionality
-How We Use Your Information
-We use your information to:
-	•	Provide and maintain the App's core functionality
-	•	Track and categorize your expenses
-	•	Calculate and display budget analytics
-	•	Generate AI-powered financial insights and recommendations
-	•	Sync your data across devices
-	•	Authenticate your account and prevent unauthorized access
-	•	Improve the App's features and user experience
-Third-Party Services
-We use the following third-party services to provide our App's functionality:
-Google Firebase
-	•	Firebase Authentication: Securely manages user sign-in and account security
-	•	Firebase Realtime Database: Stores and syncs your financial data across devices
-Firebase Privacy Policy: https://firebase.google.com/support/privacy
-Google Gemini AI
-	•	Used for AI-powered financial analysis and expense categorization
-	•	Receives aggregated spending data (category totals, budget percentages) for analysis
-	•	Does NOT receive raw transaction details or personally identifiable information
-Google AI Privacy: https://ai.google.dev/terms
-Google Translate API
-	•	Used to translate AI analysis results
-	•	Only processes the AI-generated financial advice text
-	•	Does NOT process your personal financial data
-Google Cloud Privacy: https://cloud.google.com/terms/cloud-privacy-notice
-Data Storage and Security
-Your data security is our priority:
-	•	All data is encrypted in transit using industry-standard TLS encryption
-	•	Authentication credentials are securely managed by Firebase Authentication
-	•	Financial data is stored in Firebase Realtime Database with strict security rules
-	•	We do not store your data on our own servers
-	•	Local data on your device is stored using iOS secure storage mechanisms
-Data Retention
-	•	Your data is retained for as long as you maintain an active account
-	•	You can delete your account and all associated data at any time through the App's settings
-	•	Upon account deletion, all your data is permanently removed from our systems within 30 days
-	•	Aggregated, anonymized data may be retained for analytics purposes
-Your Rights
-You have the following rights regarding your data:
-	•	Access: View all your stored data within the App
-	•	Correction: Edit and update your financial information
-	•	Deletion: Delete your account and all associated data
-	•	Export: Your data is accessible through the App interface
-	•	Withdraw Consent: Stop using the App at any time
-To exercise these rights, use the in-app settings or contact us at the email below.
-Data Sharing
-We do NOT:
-	•	Sell your personal information to third parties
-	•	Share your individual financial data with advertisers
-	•	Use your data for targeted advertising
-We may share data:
-	•	With service providers (Firebase, Google AI) as described above
-	•	If required by law or legal process
-	•	To protect our rights or prevent fraud
-Children's Privacy
-Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
-Changes to This Privacy Policy
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the App and updating the "Last Updated" date.
-We encourage you to review this Privacy Policy periodically for any changes.
-Contact Us
-If you have any questions about this Privacy Policy or our data practices, please contact us:
-rwnnkhn380@gmail.com
-We will respond to your inquiry within 30 days.
-© 2025 Cashova. All rights reserved.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashova - Privacy Policy</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #202124;
+            --secondary-text: #5f6368;
+            --background: #ffffff;
+            --section-bg: #f8f9fa;
+            --border-color: #dadce0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        
+        .app-name {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--secondary-text);
+            margin: 20px 0 10px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        
+        ul {
+            margin: 10px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+        
+        .subsection {
+            background: var(--section-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .subsection h3 {
+            margin-top: 0;
+            color: var(--text-color);
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background: #e8f0fe;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .contact-box {
+            background: var(--section-bg);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .contact-box h2 {
+            display: block;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .email-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="app-name">Cashova</p>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: December 28, 2025</p>
+        </header>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to Cashova ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you understand how your personal information is collected, used, and safeguarded.</p>
+            <p>This Privacy Policy describes our practices regarding the information we collect when you use our mobile application ("App"). By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+        </section>
+
+        <section>
+            <h2>Information We Collect</h2>
+            
+            <div class="subsection">
+                <h3>Account Information</h3>
+                <ul>
+                    <li>Email address (for authentication and account recovery)</li>
+                    <li>Password (encrypted and stored securely by Firebase Authentication)</li>
+                </ul>
+            </div>
+            
+            <div class="subsection">
+                <h3>Financial Data</h3>
+                <ul>
+                    <li>Expense transactions (amounts, merchant names, dates, categories)</li>
+                    <li>Budget categories and spending limits</li>
+                    <li>Monthly income information</li>
+                    <li>Loan details (lender names, amounts, payment schedules, interest rates)</li>
+                    <li>Payment installment information</li>
+                </ul>
+            </div>
+            
+            <div class="subsection">
+                <h3>Usage Data</h3>
+                <ul>
+                    <li>App preferences and settings</li>
+                    <li>Feature usage patterns</li>
+                    <li>Device information for app functionality</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>How We Use Your Information</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Provide and maintain the App's core functionality</li>
+                <li>Track and categorize your expenses</li>
+                <li>Calculate and display budget analytics</li>
+                <li>Generate AI-powered financial insights and recommendations</li>
+                <li>Sync your data across devices</li>
+                <li>Authenticate your account and prevent unauthorized access</li>
+                <li>Improve the App's features and user experience</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>We use the following third-party services to provide our App's functionality:</p>
+            
+            <div class="subsection">
+                <h3>Google Firebase</h3>
+                <ul>
+                    <li><strong>Firebase Authentication:</strong> Securely manages user sign-in and account security</li>
+                    <li><strong>Firebase Realtime Database:</strong> Stores and syncs your financial data across devices</li>
+                </ul>
+                <p>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+            </div>
+            
+            <div class="subsection">
+                <h3>Google Gemini AI</h3>
+                <ul>
+                    <li>Used for AI-powered financial analysis and expense categorization</li>
+                    <li>Receives aggregated spending data (category totals, budget percentages) for analysis</li>
+                    <li><span class="highlight">Does NOT receive raw transaction details or personally identifiable information</span></li>
+                </ul>
+                <p>Google AI Privacy: <a href="https://ai.google.dev/terms" target="_blank">https://ai.google.dev/terms</a></p>
+            </div>
+            
+            <div class="subsection">
+                <h3>Google Translate API</h3>
+                <ul>
+                    <li>Used to translate AI analysis results</li>
+                    <li>Only processes the AI-generated financial advice text</li>
+                    <li><span class="highlight">Does NOT process your personal financial data</span></li>
+                </ul>
+                <p>Google Cloud Privacy: <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">https://cloud.google.com/terms/cloud-privacy-notice</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Storage and Security</h2>
+            <p>Your data security is our priority:</p>
+            <ul>
+                <li>All data is encrypted in transit using industry-standard TLS encryption</li>
+                <li>Authentication credentials are securely managed by Firebase Authentication</li>
+                <li>Financial data is stored in Firebase Realtime Database with strict security rules</li>
+                <li>We do not store your data on our own servers</li>
+                <li>Local data on your device is stored using iOS secure storage mechanisms</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Retention</h2>
+            <ul>
+                <li>Your data is retained for as long as you maintain an active account</li>
+                <li>You can delete your account and all associated data at any time through the App's settings</li>
+                <li>Upon account deletion, all your data is permanently removed from our systems within 30 days</li>
+                <li>Aggregated, anonymized data may be retained for analytics purposes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Rights</h2>
+            <p>You have the following rights regarding your data:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your stored data within the App</li>
+                <li><strong>Correction:</strong> Edit and update your financial information</li>
+                <li><strong>Deletion:</strong> Delete your account and all associated data</li>
+                <li><strong>Export:</strong> Your data is accessible through the App interface</li>
+                <li><strong>Withdraw Consent:</strong> Stop using the App at any time</li>
+            </ul>
+            <p>To exercise these rights, use the in-app settings or contact us at the email below.</p>
+        </section>
+
+        <section>
+            <h2>Data Sharing</h2>
+            <p><strong>We do NOT:</strong></p>
+            <ul>
+                <li>Sell your personal information to third parties</li>
+                <li>Share your individual financial data with advertisers</li>
+                <li>Use your data for targeted advertising</li>
+            </ul>
+            <p><strong>We may share data:</strong></p>
+            <ul>
+                <li>With service providers (Firebase, Google AI) as described above</li>
+                <li>If required by law or legal process</li>
+                <li>To protect our rights or prevent fraud</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+        </section>
+
+        <section>
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the App and updating the "Last Updated" date.</p>
+            <p>We encourage you to review this Privacy Policy periodically for any changes.</p>
+        </section>
+
+        <section class="contact-box">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+            <p class="email-link"><a href="mailto:rwnnkhn380@gmail.com">rwnnkhn380@gmail.com</a></p>
+            <p>We will respond to your inquiry within 30 days.</p>
+        </section>
+
+        <footer>
+            <p>© 2025 Cashova. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
